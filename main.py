@@ -23,8 +23,8 @@ driver = webdriver.Chrome(chrome_options=chrome_options)
 driver.get("https://www.facebook.com/")
 email = driver.find_element(By.ID, "email")
 password = driver.find_element(By.ID, "pass")
-email.send_keys("sjdsjdh2@gmail.com")  # your email here
-password.send_keys("1357qweR")  # your password here
+email.send_keys("dummy@gmail.com")  # your email here
+password.send_keys("dummyPassword")  # your password here
 login = driver.find_element(By.NAME, "login")
 login.click()
 WebDriverWait(driver, 10).until(lambda x: x.execute_script("return document.readyState == 'complete'"))
